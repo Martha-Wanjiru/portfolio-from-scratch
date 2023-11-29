@@ -1,0 +1,685 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --bg-color: #ffffff;
+    --second-bg-color:#f0a3bc;
+    --text-color:#397754;
+    --main-color:#397754;
+    display: inline-block;
+
+}
+html{
+    font-size: 80.5%;
+    overflow-x: hidden;
+}
+body{
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+section{
+    min-height: 100dvh;
+    padding: 10rem 9% 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 50px;
+    gap: space;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navbar a {
+    color: #000000;
+    margin-right: 60px;
+    text-decoration: none;
+  }
+  
+  .navbar a.active {
+    font-weight: bold;
+  }
+  .navbar a.bold {
+    font-weight: bold;
+  }
+  
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.home-img img{
+   width: 30rem; 
+   height: 30rem;
+   object-fit: cover;
+   border-radius: 50%;
+   border: 2px dotted black;
+   background-size: cover;
+   
+}
+
+.home-content h2 span {
+    color: #f0a3bc;
+  }
+  
+.home-content{
+    font-size: 3.2rem;
+    font-weight: 700;
+    position: relative;
+}
+.ellipes{
+    position: absolute;
+    top: -20px; 
+    left: 50%;
+    width: 2px;
+    height: 2px;
+    background-color: green;
+    border-radius: 50%;
+    border: 50px solid green; 
+    box-sizing: content-box; 
+  }
+.home-content h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.home-content h2{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+ .home-content .btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--second-bg-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--second-bg-color);
+    font-size: 1.6rem;
+    color:var(--main-color) ;
+    letter-spacing: .1rem;
+    font-weight: 600;
+}
+.home-content .btn:hover{
+    box-shadow: none;
+}
+
+.about_me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: var(--second-bg-color);
+}
+.about-image img{
+  width: 30rem; 
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px dotted black;
+  background-size: cover; 
+}
+.back-circle{
+  width: 30rem; 
+  height: 30rem;
+  position: absolute;
+  border-radius: 100%;
+  border: 2px dotted black;
+  background:grey; 
+ }
+.heading{
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.about-me-content p{
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--bg-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  font-size: 1.6rem;
+  color:var(--main-color) ;
+  letter-spacing: .1rem;
+  font-weight: 600;
+}
+.btn:hover{
+  box-shadow: none;
+} 
+ /* Start of skills */
+ .skills{
+  text-align: center;
+  color: var(--main-color);
+}
+.skills-content{
+  font-size:24rem;
+  font-weight: 700;
+  position: relative;
+}
+.skills-content.heading {
+  font-size: 5.6 rem;
+  text-align: center;
+}
+.skills-content h1{
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+  gap: 2rem;
+}
+.skills-images {
+  display: flex;
+  justify-content: space-between;
+}
+.skills-images img {
+  max-width: 100px;
+  height: auto;
+}
+.design {
+  flex-basis: 48%;
+}
+.design h3{
+  
+}
+.one{
+  
+}
+.figma{
+  
+  
+}
+.digital-marketing{
+  
+}
+
+/* end of skills */ 
+
+
+
+
+/* start of footer one*/  
+.footer1 {
+  background-color: var(--second-bg-color);
+  color: var(--text-color);
+  padding: 20px;
+  display: flex;
+  margin-top: 30px;
+}
+
+/* Style the "Follow Me" section */
+.follow-me { 
+  margin-left: 100px;
+}
+.follow-me h2 {
+  font-size: 1.2em; 
+  background: linear-gradient(to right, red, yellow);
+  -webkit-background-clip: text; 
+  color: transparent;
+}
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+.social-icons li {
+  margin-right: 10px;
+}
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Style the "Email" section */
+.email {
+  margin-left: 400px;
+}
+.email h2 {
+  font-size: 1.2em;
+}
+.email img{
+  width: 30px;
+  height: 30px;
+}
+.email p {
+  margin: 0;
+}
+
+/* Style the "Contact Me" section */
+.contact-me {
+margin-left: 200px;
+}
+.contact-me h2 {
+  font-size: 1.2em;
+}
+.contact-me img{
+  width: 30px;
+  height: 30px;
+}
+.contact-me p {
+  margin: 0;
+}
+/* end of footer one */
+
+/* MY WORK  */
+ /* Start of skills */
+ .mywork {
+  text-align: center;
+  color: var(--main-color);
+}
+.mywork-content{
+  font-size:24rem;
+  font-weight: 700;
+  position: relative;
+}
+.mywork-content.heading {
+  font-size: 5.6 rem;
+  text-align: center;
+  margin-top: -100px;
+}
+.mywork-content h1{
+  font-size: 5.0rem;
+  font-weight: 700;
+  line-height: 1.3;
+  gap: 2rem;
+  margin-top: -60px;
+}
+/* start of logos section */
+.logos-image{
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack the two divs vertically */
+  align-items: flex-start; /* Align items to the left side */
+  justify-content: space-between; /* Create space between the two divs */
+}
+.logoone{
+  width: 100%; /* Make the div take up the full width */
+  text-align: left; /* Align text and image to the left */
+  margin-bottom: 20px; /* Add some spacing between logoone and logotwo */
+}
+.logoone img{
+  max-width: 50%;
+  height: auto;
+}
+.logoone p{
+  font-size: 20px;
+  margin: 2rem 0 3rem;
+}
+.btnLg {
+  position: absolute;
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  font-size: 1.6rem;
+  color:#000000;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  margin-top: -350px;
+}
+.btn:hover{
+  box-shadow: none;
+} 
+.logotwo{
+  width: 100%; /* Make the div take up the full width */
+  text-align: left; /* Align text and image to the left */
+}
+.logotwo img{
+  position: absolute;
+  max-width: 50%; /* Ensure the images don't exceed their container width */
+  height: auto; /* Maintain the aspect ratio */
+  margin-left: 750px;
+  margin-top: -380px;
+  object-fit: cover;
+}
+.logotwo p{
+  position: absolute;
+  font-size: 20px;
+  margin: 2rem 0 3rem;
+  margin-left: 600px;
+  margin-top: -550px;
+}
+/* end of logos section */
+
+/* start of business cards section */
+.business-cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: var(--second-bg-color);
+}
+.btn2  {
+  position: relative;
+  display: inline-block;
+  padding: 10px 70px;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  font-size: 1.6rem;
+  color:#000000;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  margin-top: -460px;
+  margin-right: 600px;
+   
+  
+}
+
+.business-cards{
+  position: absolute;
+  background-color: var(--second-bg-color);
+  width: 100%; 
+  padding: 300px 1000px;
+  left: 0%;
+  margin-top: 100px;
+  
+}
+
+
+.btn:hover{
+  box-shadow: none;
+} 
+.img1{
+  position: absolute;
+  margin-right: 1450px;
+  margin-top: 40px;
+}
+.img2{
+  position: absolute;
+  margin-right: 550px;
+  margin-top: 40px;
+  object-fit: cover;
+}
+
+.img3{
+  position: absolute;
+  margin-right: -380px;
+  margin-top: 40px;
+}
+/* end of business cards section */
+
+/* start of poster */
+
+
+.posters{
+  position: absolute;
+  display: flex;
+  margin-top: 800px;
+  gap: 40px;
+  margin-left: -90px;
+}
+
+.btn3{
+  position: absolute;
+  display: inline-block;
+  padding: 20px 80px;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  font-size: 1.6rem;
+  color:#000000;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  margin-top: -70px;
+  margin-left: 500px;
+}
+
+/* start of footer two */  
+.footer2 {
+  position: absolute;
+  background-color: var(--second-bg-color);
+  color: var(--text-color);
+  padding: 130px 500px;
+  display: flex;
+  margin-top: 1400px;
+  width: 100%;
+  left: 0%;
+  gap: 200px;
+}
+
+/* Style the "Follow Me" section */
+.follow-me2{ 
+  position: absolute;
+  margin-left: -400px;
+  margin-top: -40px;
+}
+.follow-me2 h2 {
+  font-size: 1.2em; 
+  background: linear-gradient(to right, red, yellow);
+  -webkit-background-clip: text; 
+  color: transparent;
+}
+.social-icons2{
+  list-style: none;
+  padding: 0;
+}
+.social-icons2 li {
+  margin-right: 10px;
+}
+.social-icons2 img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Style the "Email" section */
+.email2 {
+  position: absolute;
+  margin-left: 40px;
+  margin-top: -40px;
+}
+.email2 h2{
+  font-size: 1.2em;
+}
+.email2 img{
+  width: 30px;
+  height: 30px;
+}
+.email2 p{
+  margin: 0;
+}
+
+/* Style the "Contact Me" section */
+.contact-me2{
+  position: absolute;
+  margin-left: 600px;
+  margin-top: -40px;
+}
+.contact-me2 h2 {
+  font-size: 1.2em;
+}
+.contact-me2 img{
+  width: 30px;
+  height: 30px;
+}
+.contact-me2 p {
+  margin: 0;
+}
+/* end of footer two */
+
+.media{
+  position: absolute;
+  display: flex;
+  margin-top: 200px;
+  gap: 40px;
+  margin-left: 100px;
+}
+
+.contact{
+  position: absolute;
+  color: #397754;
+  font-size: 34px;
+  margin-top: 700px;
+  margin-left: 400px;
+}
+
+.btn4{
+  position: absolute;
+  display: inline-block;
+  padding: 20px 80px;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  font-size: 1.6rem;
+  color:#000000;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  margin-top: -80px;
+  margin-left: 500px;
+}
+
+.rectangle2{
+  position: absolute;
+  height: 500px;
+  width: 1200px;
+  background: green;
+  margin-top: 800px;
+  margin-left: 100px;
+  border-radius: 20px;
+}
+
+.rectangle3{
+  position: absolute;
+  height: 100px;
+  width: 800px;
+  background: white;
+  margin-top: 820px;
+  margin-left: 260px;
+  border-radius: 20px;
+}
+
+.rectangle4{
+  position: absolute;
+  height: 100px;
+  width: 800px;
+  background: white;
+  margin-top: 50px;
+  margin-left: 6px;
+  border-radius: 20px;
+}
+
+.rectangle5{
+  position: absolute;
+  height: 100px;
+  width: 800px;
+  background: white;
+  margin-top: 200px;
+  margin-left: 6px;
+  border-radius: 20px;
+}
+
+.phone{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 50px;
+}
+
+.namep{
+  color: #397754;
+  font-size: 20px;
+}
+
+.contact-mep{
+  font-size: 30px;
+  color: #000000;
+}
+
+.mail{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 50px;
+}
+
+.location{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 50px;
+}
+
+/* start of footer */  
+.footer3 {
+  position: absolute;
+  background-color: var(--second-bg-color);
+  color: var(--text-color);
+  padding: 50px 1000px;
+  display: flex;
+  width: 100%;
+  left: 0%;
+  gap: 300px;
+  margin-top: 500px;
+  
+}
+
+/* Style the "Follow Me" section */
+.follow-me3 { 
+  margin-left: -1150px;
+}
+.follow-me3 h2 {
+  font-size: 1.2em; 
+  background: linear-gradient(to right, red, yellow);
+  -webkit-background-clip: text; 
+  color: transparent;
+}
+.social-icons3 {
+  list-style: none;
+  padding: 0;
+}
+.social-icons3 li {
+  margin-right: 10px;
+}
+.social-icons3 img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Style the "Email" section */
+.email3 {
+  margin-left: 100px;
+}
+.email3 h2 {
+  font-size: 1.2em;
+}
+.email3 img{
+  width: 30px;
+  height: 30px;
+}
+.email3 p {
+  margin: 0;
+}
+
+/* Style the "Contact Me" section */
+.contact-me3 {
+margin-left: 200px;
+}
+.contact-me3 h2 {
+  font-size: 1.2em;
+}
+.contact-me3 img{
+  width: 30px;
+  height: 30px;
+}
+.contact-me3 p {
+  margin: 0;
+}
+/* end of footer */
